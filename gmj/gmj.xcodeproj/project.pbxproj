@@ -20,6 +20,10 @@
 		65D780CC22187D9A0095F80A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D780CB22187D9A0095F80A /* Login.storyboard */; };
 		65D780CF22187E610095F80A /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D780CE22187E610095F80A /* SignUpViewController.m */; };
 		65D780D222187E710095F80A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D780D122187E710095F80A /* LoginViewController.m */; };
+		A3F8AF67221891AE00B8FCAD /* TakeCall.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F8AF66221891AE00B8FCAD /* TakeCall.storyboard */; };
+		A3F8AF6B2218997E00B8FCAD /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F8AF6A2218997E00B8FCAD /* User.m */; };
+		A3F8AF6E2218998B00B8FCAD /* Call.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F8AF6D2218998B00B8FCAD /* Call.m */; };
+		A3F8AF7022189BC300B8FCAD /* CallHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F8AF6F22189BC300B8FCAD /* CallHistory.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,12 @@
 		65D780D122187E710095F80A /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		7C8BB1B3ADAF6D6DB5C9E773 /* Pods-gmj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gmj.release.xcconfig"; path = "Target Support Files/Pods-gmj/Pods-gmj.release.xcconfig"; sourceTree = "<group>"; };
 		8CF0933542DD388686B07FBC /* libPods-gmj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gmj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3F8AF66221891AE00B8FCAD /* TakeCall.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakeCall.storyboard; sourceTree = "<group>"; };
+		A3F8AF692218997E00B8FCAD /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		A3F8AF6A2218997E00B8FCAD /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		A3F8AF6C2218998B00B8FCAD /* Call.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Call.h; sourceTree = "<group>"; };
+		A3F8AF6D2218998B00B8FCAD /* Call.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Call.m; sourceTree = "<group>"; };
+		A3F8AF6F22189BC300B8FCAD /* CallHistory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CallHistory.storyboard; sourceTree = "<group>"; };
 		CD6C1E6BA84C34054600BBF5 /* Pods-gmjUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gmjUITests.release.xcconfig"; path = "Target Support Files/Pods-gmjUITests/Pods-gmjUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +113,7 @@
 		65D780A1221878E30095F80A /* gmj */ = {
 			isa = PBXGroup;
 			children = (
+				A3F8AF682218986000B8FCAD /* Models */,
 				65D780C7221879300095F80A /* ViewControllers */,
 				65D780C6221879210095F80A /* StoryBoards */,
 				65D780C8221879420095F80A /* Views */,
@@ -129,6 +140,8 @@
 				65D780A8221878E30095F80A /* Main.storyboard */,
 				65D780C922187CCC0095F80A /* SignUp.storyboard */,
 				65D780CB22187D9A0095F80A /* Login.storyboard */,
+				A3F8AF66221891AE00B8FCAD /* TakeCall.storyboard */,
+				A3F8AF6F22189BC300B8FCAD /* CallHistory.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -163,8 +176,18 @@
 				1B286175EA853E512985F569 /* Pods-gmjUITests.debug.xcconfig */,
 				CD6C1E6BA84C34054600BBF5 /* Pods-gmjUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A3F8AF682218986000B8FCAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3F8AF692218997E00B8FCAD /* User.h */,
+				A3F8AF6A2218997E00B8FCAD /* User.m */,
+				A3F8AF6C2218998B00B8FCAD /* Call.h */,
+				A3F8AF6D2218998B00B8FCAD /* Call.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		E909ACB3E8FAE12211B5E8DF /* Frameworks */ = {
@@ -262,6 +285,8 @@
 				65D780AF221878E50095F80A /* LaunchScreen.storyboard in Resources */,
 				65D780AC221878E50095F80A /* Assets.xcassets in Resources */,
 				65D780CA22187CCC0095F80A /* SignUp.storyboard in Resources */,
+				A3F8AF7022189BC300B8FCAD /* CallHistory.storyboard in Resources */,
+				A3F8AF67221891AE00B8FCAD /* TakeCall.storyboard in Resources */,
 				65D780CC22187D9A0095F80A /* Login.storyboard in Resources */,
 				65D780AA221878E30095F80A /* Main.storyboard in Resources */,
 			);
@@ -352,7 +377,9 @@
 			files = (
 				65D780A7221878E30095F80A /* ViewController.m in Sources */,
 				65D780B2221878E50095F80A /* main.m in Sources */,
+				A3F8AF6B2218997E00B8FCAD /* User.m in Sources */,
 				65D780CF22187E610095F80A /* SignUpViewController.m in Sources */,
+				A3F8AF6E2218998B00B8FCAD /* Call.m in Sources */,
 				65D780A4221878E30095F80A /* AppDelegate.m in Sources */,
 				65D780D222187E710095F80A /* LoginViewController.m in Sources */,
 			);
