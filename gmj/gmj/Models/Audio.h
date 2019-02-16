@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Audio : NSObject
 
+@property (nonatomic, strong) NSString *textToString;
+@property (nonatomic, strong) NSDate *date;
+@property (nonatomic, strong) NSString *name;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
