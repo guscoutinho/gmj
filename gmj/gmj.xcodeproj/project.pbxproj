@@ -22,8 +22,10 @@
 		65D780D222187E710095F80A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D780D122187E710095F80A /* LoginViewController.m */; };
 		A3F8AF67221891AE00B8FCAD /* TakeCall.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F8AF66221891AE00B8FCAD /* TakeCall.storyboard */; };
 		A3F8AF6B2218997E00B8FCAD /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F8AF6A2218997E00B8FCAD /* User.m */; };
-		A3F8AF6E2218998B00B8FCAD /* Call.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F8AF6D2218998B00B8FCAD /* Call.m */; };
+		A3F8AF6E2218998B00B8FCAD /* Audio.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F8AF6D2218998B00B8FCAD /* Audio.m */; };
 		A3F8AF7022189BC300B8FCAD /* CallHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F8AF6F22189BC300B8FCAD /* CallHistory.storyboard */; };
+		A3F8AF722218A68F00B8FCAD /* ic_iOS_all in Resources */ = {isa = PBXBuildFile; fileRef = A3F8AF712218A68E00B8FCAD /* ic_iOS_all */; };
+		A3F8AF752218A83C00B8FCAD /* ListenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F8AF742218A83C00B8FCAD /* ListenViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +66,12 @@
 		A3F8AF66221891AE00B8FCAD /* TakeCall.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TakeCall.storyboard; sourceTree = "<group>"; };
 		A3F8AF692218997E00B8FCAD /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		A3F8AF6A2218997E00B8FCAD /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		A3F8AF6C2218998B00B8FCAD /* Call.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Call.h; sourceTree = "<group>"; };
-		A3F8AF6D2218998B00B8FCAD /* Call.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Call.m; sourceTree = "<group>"; };
+		A3F8AF6C2218998B00B8FCAD /* Audio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Audio.h; sourceTree = "<group>"; };
+		A3F8AF6D2218998B00B8FCAD /* Audio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Audio.m; sourceTree = "<group>"; };
 		A3F8AF6F22189BC300B8FCAD /* CallHistory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CallHistory.storyboard; sourceTree = "<group>"; };
+		A3F8AF712218A68E00B8FCAD /* ic_iOS_all */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ic_iOS_all; sourceTree = "<group>"; };
+		A3F8AF732218A83C00B8FCAD /* ListenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListenViewController.h; sourceTree = "<group>"; };
+		A3F8AF742218A83C00B8FCAD /* ListenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListenViewController.m; sourceTree = "<group>"; };
 		CD6C1E6BA84C34054600BBF5 /* Pods-gmjUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gmjUITests.release.xcconfig"; path = "Target Support Files/Pods-gmjUITests/Pods-gmjUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +118,7 @@
 		65D780A1221878E30095F80A /* gmj */ = {
 			isa = PBXGroup;
 			children = (
+				A3F8AF712218A68E00B8FCAD /* ic_iOS_all */,
 				A3F8AF682218986000B8FCAD /* Models */,
 				65D780C7221879300095F80A /* ViewControllers */,
 				65D780C6221879210095F80A /* StoryBoards */,
@@ -155,6 +161,8 @@
 				65D780CE22187E610095F80A /* SignUpViewController.m */,
 				65D780D022187E710095F80A /* LoginViewController.h */,
 				65D780D122187E710095F80A /* LoginViewController.m */,
+				A3F8AF732218A83C00B8FCAD /* ListenViewController.h */,
+				A3F8AF742218A83C00B8FCAD /* ListenViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -184,8 +192,8 @@
 			children = (
 				A3F8AF692218997E00B8FCAD /* User.h */,
 				A3F8AF6A2218997E00B8FCAD /* User.m */,
-				A3F8AF6C2218998B00B8FCAD /* Call.h */,
-				A3F8AF6D2218998B00B8FCAD /* Call.m */,
+				A3F8AF6C2218998B00B8FCAD /* Audio.h */,
+				A3F8AF6D2218998B00B8FCAD /* Audio.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F8AF722218A68F00B8FCAD /* ic_iOS_all in Resources */,
 				65D780AF221878E50095F80A /* LaunchScreen.storyboard in Resources */,
 				65D780AC221878E50095F80A /* Assets.xcassets in Resources */,
 				65D780CA22187CCC0095F80A /* SignUp.storyboard in Resources */,
@@ -379,9 +388,10 @@
 				65D780B2221878E50095F80A /* main.m in Sources */,
 				A3F8AF6B2218997E00B8FCAD /* User.m in Sources */,
 				65D780CF22187E610095F80A /* SignUpViewController.m in Sources */,
-				A3F8AF6E2218998B00B8FCAD /* Call.m in Sources */,
+				A3F8AF6E2218998B00B8FCAD /* Audio.m in Sources */,
 				65D780A4221878E30095F80A /* AppDelegate.m in Sources */,
 				65D780D222187E710095F80A /* LoginViewController.m in Sources */,
+				A3F8AF752218A83C00B8FCAD /* ListenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
