@@ -1,0 +1,16 @@
+PODS:
+  - HoundifySDK (1.2.2)
+
+DEPENDENCIES:
+  - HoundifySDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - HoundifySDK
+
+SPEC CHECKSUMS:
+  HoundifySDK: aab761291dbec85cb4da3f529189b7b5b7e351ef
+
+PODFILE CHECKSUM: 2e15d4eb3d1c3bfe60310c8884bb5a28fc48608c
+
+COCOAPODS: 1.6.0

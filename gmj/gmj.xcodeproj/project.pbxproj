@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EDEEADA92F5DE5CCC0DDAF4 /* libPods-gmj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF0933542DD388686B07FBC /* libPods-gmj.a */; };
+		29AB0B0AAA8F83D4E0A49FAE /* libPods-gmjUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F85542B4619AAA60D52C776 /* libPods-gmjUITests.a */; };
 		65D780A4221878E30095F80A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D780A3221878E30095F80A /* AppDelegate.m */; };
 		65D780A7221878E30095F80A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D780A6221878E30095F80A /* ViewController.m */; };
 		65D780AA221878E30095F80A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D780A8221878E30095F80A /* Main.storyboard */; };
@@ -31,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B286175EA853E512985F569 /* Pods-gmjUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gmjUITests.debug.xcconfig"; path = "Target Support Files/Pods-gmjUITests/Pods-gmjUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F85542B4619AAA60D52C776 /* libPods-gmjUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gmjUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		545F41AB73BF3D4BDFF4AD1F /* Pods-gmj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gmj.debug.xcconfig"; path = "Target Support Files/Pods-gmj/Pods-gmj.debug.xcconfig"; sourceTree = "<group>"; };
 		65D7809F221878E30095F80A /* gmj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gmj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D780A2221878E30095F80A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		65D780A3221878E30095F80A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,6 +55,9 @@
 		65D780CE22187E610095F80A /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		65D780D022187E710095F80A /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		65D780D122187E710095F80A /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		7C8BB1B3ADAF6D6DB5C9E773 /* Pods-gmj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gmj.release.xcconfig"; path = "Target Support Files/Pods-gmj/Pods-gmj.release.xcconfig"; sourceTree = "<group>"; };
+		8CF0933542DD388686B07FBC /* libPods-gmj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gmj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6C1E6BA84C34054600BBF5 /* Pods-gmjUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gmjUITests.release.xcconfig"; path = "Target Support Files/Pods-gmjUITests/Pods-gmjUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EDEEADA92F5DE5CCC0DDAF4 /* libPods-gmj.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29AB0B0AAA8F83D4E0A49FAE /* libPods-gmjUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +86,8 @@
 				65D780A1221878E30095F80A /* gmj */,
 				65D780BA221878E60095F80A /* gmjUITests */,
 				65D780A0221878E30095F80A /* Products */,
+				6E3A340026CD335BB59364A0 /* Pods */,
+				E909ACB3E8FAE12211B5E8DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +155,27 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		6E3A340026CD335BB59364A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				545F41AB73BF3D4BDFF4AD1F /* Pods-gmj.debug.xcconfig */,
+				7C8BB1B3ADAF6D6DB5C9E773 /* Pods-gmj.release.xcconfig */,
+				1B286175EA853E512985F569 /* Pods-gmjUITests.debug.xcconfig */,
+				CD6C1E6BA84C34054600BBF5 /* Pods-gmjUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E909ACB3E8FAE12211B5E8DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CF0933542DD388686B07FBC /* libPods-gmj.a */,
+				3F85542B4619AAA60D52C776 /* libPods-gmjUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65D780C0221878E60095F80A /* Build configuration list for PBXNativeTarget "gmj" */;
 			buildPhases = (
+				C583BF224997A8A136779F9E /* [CP] Check Pods Manifest.lock */,
 				65D7809B221878E30095F80A /* Sources */,
 				65D7809C221878E30095F80A /* Frameworks */,
 				65D7809D221878E30095F80A /* Resources */,
+				3DC4525AEBD4A004ABFC9F36 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65D780C3221878E60095F80A /* Build configuration list for PBXNativeTarget "gmjUITests" */;
 			buildPhases = (
+				CF156A8F52B3A377D65F110E /* [CP] Check Pods Manifest.lock */,
 				65D780B3221878E60095F80A /* Sources */,
 				65D780B4221878E60095F80A /* Frameworks */,
 				65D780B5221878E60095F80A /* Resources */,
@@ -239,6 +275,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DC4525AEBD4A004ABFC9F36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gmj/Pods-gmj-frameworks.sh",
+				"${PODS_ROOT}/HoundifySDK/HoundifySDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HoundifySDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gmj/Pods-gmj-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C583BF224997A8A136779F9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gmj-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF156A8F52B3A377D65F110E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gmjUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		65D7809B221878E30095F80A /* Sources */ = {
@@ -403,6 +508,7 @@
 		};
 		65D780C1221878E60095F80A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 545F41AB73BF3D4BDFF4AD1F /* Pods-gmj.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -420,6 +526,7 @@
 		};
 		65D780C2221878E60095F80A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C8BB1B3ADAF6D6DB5C9E773 /* Pods-gmj.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -437,6 +544,7 @@
 		};
 		65D780C4221878E60095F80A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B286175EA853E512985F569 /* Pods-gmjUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = gmjUITests/Info.plist;
@@ -454,6 +562,7 @@
 		};
 		65D780C5221878E60095F80A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD6C1E6BA84C34054600BBF5 /* Pods-gmjUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = gmjUITests/Info.plist;
