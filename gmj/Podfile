@@ -9,6 +9,7 @@ target 'gmj' do
 
 pod 'HoundifySDK'
 pod 'Firebase/Core'
+pod 'Firebase/Auth'
 
 
   target 'gmjUITests' do

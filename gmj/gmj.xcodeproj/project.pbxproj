@@ -17,9 +17,7 @@
 		65D780B2221878E50095F80A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D780B1221878E50095F80A /* main.m */; };
 		65D780BC221878E60095F80A /* gmjUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D780BB221878E60095F80A /* gmjUITests.m */; };
 		65D780CA22187CCC0095F80A /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D780C922187CCC0095F80A /* SignUp.storyboard */; };
-		65D780CC22187D9A0095F80A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D780CB22187D9A0095F80A /* Login.storyboard */; };
 		65D780CF22187E610095F80A /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D780CE22187E610095F80A /* SignUpViewController.m */; };
-		65D780D222187E710095F80A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D780D122187E710095F80A /* LoginViewController.m */; };
 		65D780D42218AB830095F80A /* Resources.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D780D32218AB830095F80A /* Resources.storyboard */; };
 		65D780D62218AB990095F80A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D780D52218AB990095F80A /* Home.storyboard */; };
 		65D780D82218ABA80095F80A /* CallLog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D780D72218ABA80095F80A /* CallLog.storyboard */; };
@@ -62,11 +60,8 @@
 		65D780BB221878E60095F80A /* gmjUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gmjUITests.m; sourceTree = "<group>"; };
 		65D780BD221878E60095F80A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65D780C922187CCC0095F80A /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
-		65D780CB22187D9A0095F80A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		65D780CD22187E610095F80A /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		65D780CE22187E610095F80A /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
-		65D780D022187E710095F80A /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		65D780D122187E710095F80A /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		65D780D32218AB830095F80A /* Resources.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Resources.storyboard; sourceTree = "<group>"; };
 		65D780D52218AB990095F80A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		65D780D72218ABA80095F80A /* CallLog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CallLog.storyboard; sourceTree = "<group>"; };
@@ -163,7 +158,6 @@
 				65D780A8221878E30095F80A /* Main.storyboard */,
 				65D780D52218AB990095F80A /* Home.storyboard */,
 				65D780C922187CCC0095F80A /* SignUp.storyboard */,
-				65D780CB22187D9A0095F80A /* Login.storyboard */,
 				A3F8AF66221891AE00B8FCAD /* TakeCall.storyboard */,
 				65D780D32218AB830095F80A /* Resources.storyboard */,
 				65D780D72218ABA80095F80A /* CallLog.storyboard */,
@@ -178,8 +172,6 @@
 				65D780A6221878E30095F80A /* ViewController.m */,
 				65D780CD22187E610095F80A /* SignUpViewController.h */,
 				65D780CE22187E610095F80A /* SignUpViewController.m */,
-				65D780D022187E710095F80A /* LoginViewController.h */,
-				65D780D122187E710095F80A /* LoginViewController.m */,
 				65D780D92218AC2D0095F80A /* HomeViewController.h */,
 				65D780DA2218AC2D0095F80A /* HomeViewController.m */,
 				65D780DC2218AC3A0095F80A /* CallLogViewController.h */,
@@ -329,7 +321,6 @@
 				65D780CA22187CCC0095F80A /* SignUp.storyboard in Resources */,
 				65D780D42218AB830095F80A /* Resources.storyboard in Resources */,
 				A3F8AF67221891AE00B8FCAD /* TakeCall.storyboard in Resources */,
-				65D780CC22187D9A0095F80A /* Login.storyboard in Resources */,
 				65D780E92218BEDA0095F80A /* GoogleService-Info.plist in Resources */,
 				65D780AA221878E30095F80A /* Main.storyboard in Resources */,
 				65D780D82218ABA80095F80A /* CallLog.storyboard in Resources */,
@@ -416,7 +407,6 @@
 				65D780CF22187E610095F80A /* SignUpViewController.m in Sources */,
 				A3F8AF6E2218998B00B8FCAD /* Audio.m in Sources */,
 				65D780A4221878E30095F80A /* AppDelegate.m in Sources */,
-				65D780D222187E710095F80A /* LoginViewController.m in Sources */,
 				65D780DB2218AC2D0095F80A /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

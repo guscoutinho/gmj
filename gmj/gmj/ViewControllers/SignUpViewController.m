@@ -7,8 +7,14 @@
 //
 
 #import "SignUpViewController.h"
+@import Firebase;
 
 @interface SignUpViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@property (weak, nonatomic) IBOutlet UIButton *signUpButton;
+@property(strong, nonatomic) FIRAuthStateDidChangeListenerHandle handle;
 
 @end
 
@@ -17,12 +23,55 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSError *signOutError;
+    BOOL status = [[FIRAuth auth] signOut:&signOutError];
+    if (!status) {
+        NSLog(@"Error signing out: %@", signOutError);
+        return;
+    }else{
+        NSLog(@"Successfully Signout");
+    }}
+
+- (void)viewWillAppear: (BOOL)animated {
+    self.handle = [[FIRAuth auth]
+                   addAuthStateDidChangeListener:^(FIRAuth *_Nonnull auth, FIRUser *_Nullable user) {
+                       
+                   }];
+}
+
+- (void) viewWillDisappear:(BOOL)animated {
+    [[FIRAuth auth] removeAuthStateDidChangeListener:_handle];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)didTapLogin:(id)sender {
+
+    [[FIRAuth auth] signInWithEmail:self.usernameTextField.text
+                           password:self->_passwordTextField.text
+                         completion:^(FIRAuthDataResult * _Nullable authResult,
+                                      NSError * _Nullable error) {
+                             // ...
+                         }];
+
+
+}
+
+- (IBAction)didTapSignUp:(id)sender {
+    [[FIRAuth auth] createUserWithEmail:self.usernameTextField.text
+                               password:self.passwordTextField.text
+                             completion:^(FIRAuthDataResult * _Nullable authResult,
+                                          NSError * _Nullable error) {
+                                NSLog(@"Auth Error: %@", error);
+                                NSLog(@"Auth Results: %@", authResult);
+                             }];
+    
+}
+
+
 
 /*
 #pragma mark - Navigation
