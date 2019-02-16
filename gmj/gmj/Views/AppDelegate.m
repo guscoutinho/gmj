@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+@import HoundifySDK;
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [Hound setClientID:@"cJOm2Vpg4g7yxMGyVZfidw=="];
+    [Hound setClientKey:@"9_PY9vxInt4U1ygQ7zerPNt8dWGLgN-FsdimFp92Lx1vybx3-CjrQHzArYUNj4oIyCSrfyJM6gNB2sQMje8T1Q=="];
+    
     return YES;
 }
 
