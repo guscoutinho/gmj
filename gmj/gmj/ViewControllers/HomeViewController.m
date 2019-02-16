@@ -7,8 +7,13 @@
 //
 
 #import "HomeViewController.h"
+#import "CallTableViewCell.h"
 
-@interface HomeViewController ()
+
+@interface HomeViewController () <UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+//@property (nonatomic, strong) UIRefreshControl *refreshControl;
 
 @end
 
@@ -16,12 +21,43 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [super viewWillAppear:YES];
+    [self tableViewSetup];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)tableViewSetup {
+    self.tableView.backgroundColor = [UIColor colorWithRed:240.0/255.0 green:240.0/255.0 blue:240.0/255.0 alpha:1.0];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+}
+
+//- (void)refreshControlSetup {
+//    // initialization
+//    self.refreshControl = [[UIRefreshControl alloc] init];
+//
+//    // Programagtic view of dragging and dropping in code
+//    [self.refreshControl addTarget:self action:@selector(fetchUserActs) forControlEvents:UIControlEventValueChanged];
+//
+//    // Nests views into subviews
+//    [self.tableView insertSubview:self.refreshControl atIndex:0];
+//    [self.tableView sendSubviewToBack:self.refreshControl];
+//}
+
+- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    
+    CallTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CallTableViewCell"];
+    return cell;
+}
+
+- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 5;
 }
 
 /*
