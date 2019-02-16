@@ -8,6 +8,7 @@ target 'gmj' do
   # Pods for gmj
 
 pod 'HoundifySDK'
+pod 'Firebase/Core'
 
 
   target 'gmjUITests' do
