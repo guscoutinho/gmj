@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>221458719166-n0f71t1ktabnefrm8oaoa9naqq47a8h5.apps.googleusercontent.com</string>
+	<string>304079774832-e3ijod75nrd8frld2485rj0btdh27ilc.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.221458719166-n0f71t1ktabnefrm8oaoa9naqq47a8h5</string>
+	<string>com.googleusercontent.apps.304079774832-e3ijod75nrd8frld2485rj0btdh27ilc</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCBg62iojc1Tt8ihgVHw_eC6IPVB-EZ-A8</string>
+	<string>AIzaSyAqyBBD5xoNtQE81OjCrw6UmrB_26c3bkc</string>
 	<key>GCM_SENDER_ID</key>
-	<string>221458719166</string>
+	<string>304079774832</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>GustavoCoutinho.gmj</string>
 	<key>PROJECT_ID</key>
-	<string>treehacks2019-ec925</string>
+	<string>treehacks-not-broken</string>
 	<key>STORAGE_BUCKET</key>
-	<string>treehacks2019-ec925.appspot.com</string>
+	<string>treehacks-not-broken.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:221458719166:ios:6f0ed4db831a0434</string>
+	<string>1:304079774832:ios:6f0ed4db831a0434</string>
 	<key>DATABASE_URL</key>
-	<string>https://treehacks2019-ec925.firebaseio.com</string>
+	<string>https://treehacks-not-broken.firebaseio.com</string>
 </dict>
 </plist>
