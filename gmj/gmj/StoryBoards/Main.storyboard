@@ -79,5 +79,19 @@
             </objects>
             <point key="canvasLocation" x="172" y="602"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Kkg-yd-Fw6">
+            <objects>
+                <tabBarController id="Rvl-GS-Y4n" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="45R-Se-VRQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ltH-Mk-IyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098" y="501"/>
+        </scene>
     </scenes>
 </document>

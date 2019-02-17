@@ -150,9 +150,25 @@
              Audio *audio = [[Audio alloc] init];
              
              // here we do that good for loop to loop through string ***************
+             NSArray *accidents = [NSArray arrayWithObjects:@"accident",@"crash", @"drown", "lightning",@"overdose",@"assault",@"fight",@"hurt",@"injure",@"attack",@"drunk driver", "weapon",@"gun", nil];
+             NSArray *medicalEmergency = [NSArray arrayWithObjects:@"stroke",@"heart attack", @"seizure", "diabetes",@"faint",@"pass out",@"passed out",@"unconscious",@"hypothermia",@"breathe",@"breath", @"dizzy",@"dizziness", @"blind", @"blood", @"bone", @"choke", @"choking", @"poison", @"venom", @"allergic reaction", nil];
+             NSArray *fire = [NSArray arrayWithObjects:@"fire",@"arson", @"burn", nil];
+             NSArray *crime = [NSArray arrayWithObjects:@"theft",@"arson", @"theif", "thieves",@"burglar",@"robber",@"fight", nil];
+             NSArray *potentialDanger = [NSArray arrayWithObjects:@"suspicious",@"nervous", @"scared", "uncomfortable",@"loiter",@"following me",@"stalk", nil];
+             NSArray *grandArray = [NSArray arrayWithObjects:accidents, medicalEmergency, fire, crime, potentialDanger, nil];
              
              audio.textToString = self.responseText.string;
              audio.date = date.string;
+             NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+             for (int i = 0; i < [grandArray count]; i++) {
+                 for (int j =  0; j < [grandArray[i] count]; j++) {
+                     if ([self.responseText.string rangeOfString:grandArray[i][j]].location != NSNotFound) {
+                         [tempArray addObject:grandArray[i][j]];
+                     }
+                }
+             }
+             audio.tags = tempArray;
+             
              [self.timelinePosts addObject:audio];
              
              HoundDataCommandResult* commandResult = [response allResults].firstObject;
