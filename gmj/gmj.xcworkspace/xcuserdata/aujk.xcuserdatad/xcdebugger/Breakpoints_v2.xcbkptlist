@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gmj/ViewControllers/SignUpViewController.m"
-            timestampString = "572070875.8535"
+            timestampString = "572075091.378125"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "-didTapSignUp:"
             landmarkType = "7">
          </BreakpointContent>
@@ -36,7 +36,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gmj/ViewControllers/SignUpViewController.m"
-            timestampString = "572070875.853846"
+            timestampString = "572075091.378481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
@@ -52,7 +52,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gmj/ViewControllers/SignUpViewController.m"
-            timestampString = "572070875.853918"
+            timestampString = "572075091.378551"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
@@ -68,12 +68,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gmj/ViewControllers/HomeViewController.m"
-            timestampString = "572070875.853981"
+            timestampString = "572075091.378615"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "-viewWillAppear:"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -84,11 +84,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gmj/ViewControllers/HomeViewController.m"
-            timestampString = "572070875.854653"
+            timestampString = "572075091.379277"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "HomeViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gmj/ViewControllers/HomeViewController.m"
+            timestampString = "572075091.379806"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "-handleHoundVoiceSearchHotPhraseNotification:"
             landmarkType = "7">
          </BreakpointContent>
@@ -100,13 +116,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gmj/ViewControllers/HomeViewController.m"
-            timestampString = "572070875.855049"
+            timestampString = "572075091.380276"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "-handleHoundVoiceSearchStateChangeNotification:"
-            landmarkType = "7">
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "HomeViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -116,11 +132,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gmj/ViewControllers/HomeViewController.m"
-            timestampString = "572070875.85543"
+            timestampString = "572075091.380671"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "-activateVoiceSearch:"
             landmarkType = "7">
          </BreakpointContent>
@@ -132,11 +148,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gmj/ViewControllers/HomeViewController.m"
-            timestampString = "572070875.8557889"
+            timestampString = "572075091.381126"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
             landmarkName = "-resetTextView"
             landmarkType = "7">
          </BreakpointContent>
@@ -148,11 +164,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gmj/ViewControllers/HomeViewController.m"
-            timestampString = "572070875.8561209"
+            timestampString = "572075091.381593"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
             landmarkName = "-dismissSearch"
             landmarkType = "7">
          </BreakpointContent>
@@ -164,11 +180,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gmj/ViewControllers/HomeViewController.m"
-            timestampString = "572070875.8564529"
+            timestampString = "572075091.382107"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "172"
-            endingLineNumber = "172"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
             landmarkName = "-refreshTextView"
             landmarkType = "7">
          </BreakpointContent>
@@ -180,11 +196,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gmj/ViewControllers/HomeViewController.m"
-            timestampString = "572070875.856782"
+            timestampString = "572075091.382484"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "186"
-            endingLineNumber = "186"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
             landmarkName = "-startListeningForHotPhrase"
             landmarkType = "7">
          </BreakpointContent>
@@ -196,27 +212,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gmj/ViewControllers/HomeViewController.m"
-            timestampString = "572070875.857116"
+            timestampString = "572075091.3828911"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
-            landmarkName = "-explanatoryText"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "gmj/ViewControllers/HomeViewController.m"
-            timestampString = "572070875.857429"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "226"
-            endingLineNumber = "226"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
             landmarkName = "-setUpdateText:"
             landmarkType = "7">
          </BreakpointContent>
@@ -228,11 +228,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gmj/ViewControllers/HomeViewController.m"
-            timestampString = "572070875.8577369"
+            timestampString = "572075091.383311"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "235"
-            endingLineNumber = "235"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
             landmarkName = "-setResponseText:"
             landmarkType = "7">
          </BreakpointContent>
@@ -244,11 +244,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gmj/ViewControllers/HomeViewController.m"
-            timestampString = "572070875.858044"
+            timestampString = "572075091.383707"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
             landmarkName = "-activateVoiceSearch:"
             landmarkType = "7">
          </BreakpointContent>
@@ -260,7 +260,39 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gmj/ViewControllers/HomeViewController.m"
-            timestampString = "572070875.858331"
+            timestampString = "572075091.384037"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "-activateVoiceSearch:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gmj/ViewControllers/HomeViewController.m"
+            timestampString = "572075091.384376"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "-activateVoiceSearch:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gmj/ViewControllers/HomeViewController.m"
+            timestampString = "572075091.384692"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "118"
@@ -276,11 +308,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gmj/ViewControllers/HomeViewController.m"
-            timestampString = "572070875.858618"
+            timestampString = "572075091.385004"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "-activateVoiceSearch:"
             landmarkType = "7">
          </BreakpointContent>
@@ -292,27 +324,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gmj/ViewControllers/HomeViewController.m"
-            timestampString = "572070875.8589129"
+            timestampString = "572075091.385319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "-activateVoiceSearch:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "gmj/ViewControllers/HomeViewController.m"
-            timestampString = "572070875.859197"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
             landmarkName = "-activateVoiceSearch:"
             landmarkType = "7">
          </BreakpointContent>
@@ -324,27 +340,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "gmj/ViewControllers/HomeViewController.m"
-            timestampString = "572070875.8595591"
+            timestampString = "572075091.385617"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
-            landmarkName = "-activateVoiceSearch:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "gmj/ViewControllers/HomeViewController.m"
-            timestampString = "572070875.859846"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
             landmarkName = "-activateVoiceSearch:"
             landmarkType = "7">
          </BreakpointContent>

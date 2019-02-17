@@ -22,6 +22,7 @@
 @property (nonatomic, readonly) NSString *explanatoryText;
 @property (nonatomic, copy) NSString *updateText;
 @property (nonatomic, copy) NSAttributedString *responseText;
+@property (strong, nonatomic) IBOutlet UIView *greenBackground;
 
 
 @end
@@ -31,8 +32,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [super viewWillAppear:YES];
-    [self.audios init];
     self.timelinePosts = [[NSMutableArray alloc] init];
+    
+    self.greenBackground = [[UIView alloc] initWithFrame:CGRectMake(10,20,100,100)];
+    self.greenBackground.alpha = 0.5;
+    self.greenBackground.layer.cornerRadius = 50;  // half the width/height
 
 }
 
@@ -118,9 +122,6 @@
              NSLog(@"Transcription: %@", transcription);
          }
      }];
-    
-    
-    
     
     
     [[Houndify instance] presentListeningViewControllerInViewController:self.tabBarController

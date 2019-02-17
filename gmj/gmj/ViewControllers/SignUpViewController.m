@@ -30,7 +30,9 @@
         return;
     }else{
         NSLog(@"Successfully Signout");
-    }}
+    }
+    
+}
 
 - (void)viewWillAppear: (BOOL)animated {
     self.handle = [[FIRAuth auth]
@@ -56,8 +58,8 @@
                                       NSError * _Nullable error) {
                              // ...
                          }];
-
-
+    
+    [self performSegueWithIdentifier:@"GoHomeSegue" sender:nil];
 }
 
 - (IBAction)didTapSignUp:(id)sender {
@@ -68,6 +70,8 @@
                                 NSLog(@"Auth Error: %@", error);
                                 NSLog(@"Auth Results: %@", authResult);
                              }];
+    
+    [self performSegueWithIdentifier:@"GoHomeSegue" sender:nil];
     
 }
 

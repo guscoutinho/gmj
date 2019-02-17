@@ -11,12 +11,11 @@
 		29AB0B0AAA8F83D4E0A49FAE /* libPods-gmjUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F85542B4619AAA60D52C776 /* libPods-gmjUITests.a */; };
 		65D780A4221878E30095F80A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D780A3221878E30095F80A /* AppDelegate.m */; };
 		65D780A7221878E30095F80A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D780A6221878E30095F80A /* ViewController.m */; };
-		65D780AA221878E30095F80A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D780A8221878E30095F80A /* Main.storyboard */; };
 		65D780AC221878E50095F80A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65D780AB221878E50095F80A /* Assets.xcassets */; };
 		65D780AF221878E50095F80A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D780AD221878E50095F80A /* LaunchScreen.storyboard */; };
 		65D780B2221878E50095F80A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D780B1221878E50095F80A /* main.m */; };
 		65D780BC221878E60095F80A /* gmjUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D780BB221878E60095F80A /* gmjUITests.m */; };
-		65D780CA22187CCC0095F80A /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D780C922187CCC0095F80A /* SignUp.storyboard */; };
+		65D780CA22187CCC0095F80A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D780C922187CCC0095F80A /* Main.storyboard */; };
 		65D780CF22187E610095F80A /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D780CE22187E610095F80A /* SignUpViewController.m */; };
 		65D780D42218AB830095F80A /* Resources.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D780D32218AB830095F80A /* Resources.storyboard */; };
 		65D780D62218AB990095F80A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D780D52218AB990095F80A /* Home.storyboard */; };
@@ -52,7 +51,6 @@
 		65D780A3221878E30095F80A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		65D780A5221878E30095F80A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		65D780A6221878E30095F80A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		65D780A9221878E30095F80A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65D780AB221878E50095F80A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65D780AE221878E50095F80A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65D780B0221878E50095F80A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,7 +58,7 @@
 		65D780B7221878E60095F80A /* gmjUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gmjUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D780BB221878E60095F80A /* gmjUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gmjUITests.m; sourceTree = "<group>"; };
 		65D780BD221878E60095F80A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65D780C922187CCC0095F80A /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		65D780C922187CCC0095F80A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		65D780CD22187E610095F80A /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		65D780CE22187E610095F80A /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		65D780D32218AB830095F80A /* Resources.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Resources.storyboard; sourceTree = "<group>"; };
@@ -162,9 +160,8 @@
 		65D780C6221879210095F80A /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
-				65D780A8221878E30095F80A /* Main.storyboard */,
+				65D780C922187CCC0095F80A /* Main.storyboard */,
 				65D780D52218AB990095F80A /* Home.storyboard */,
-				65D780C922187CCC0095F80A /* SignUp.storyboard */,
 				A3F8AF66221891AE00B8FCAD /* TakeCall.storyboard */,
 				65D780D32218AB830095F80A /* Resources.storyboard */,
 				65D780D72218ABA80095F80A /* CallLog.storyboard */,
@@ -325,10 +322,9 @@
 				65D780D62218AB990095F80A /* Home.storyboard in Resources */,
 				65D780AF221878E50095F80A /* LaunchScreen.storyboard in Resources */,
 				65D780AC221878E50095F80A /* Assets.xcassets in Resources */,
-				65D780CA22187CCC0095F80A /* SignUp.storyboard in Resources */,
+				65D780CA22187CCC0095F80A /* Main.storyboard in Resources */,
 				65D780D42218AB830095F80A /* Resources.storyboard in Resources */,
 				A3F8AF67221891AE00B8FCAD /* TakeCall.storyboard in Resources */,
-				65D780AA221878E30095F80A /* Main.storyboard in Resources */,
 				A3F8AF802218E5FC00B8FCAD /* GoogleService-Info.plist in Resources */,
 				65D780D82218ABA80095F80A /* CallLog.storyboard in Resources */,
 			);
@@ -438,14 +434,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		65D780A8221878E30095F80A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				65D780A9221878E30095F80A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		65D780AD221878E50095F80A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
