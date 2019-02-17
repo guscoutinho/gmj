@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "CallTableViewCell.h"
 #import "JSONAttributedFormatter.h"
+#import "Audio.h"
 
 @import HoundifySDK;
 
@@ -29,6 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [super viewWillAppear:YES];
+    [self.audios init];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -89,12 +91,43 @@
     
     // Launch the houndify listening UI using presentListeningViewControllerInViewController:fromView:style:requestInfo:responseHandler:
     
+    [[HoundVoiceSearch instance] startSearchWithRequestInfo:nil responseHandler:
+     
+     ^(NSError* error, HoundVoiceSearchResponseType responseType, id response, NSDictionary* dictionary, NSDictionary* requestInfo) {
+         
+         NSLog(@"first step");
+         
+//         if (error)
+//         {
+//             NSLog(@"YOOOOOOOOOOO");
+//             return;
+//         }
+         
+         if (responseType == HoundVoiceSearchResponseTypePartialTranscription) {
+             // partial transcription
+             NSLog(@"NOOOOOOOOOOO");
+
+         } else if (responseType == HoundVoiceSearchResponseTypeHoundServer) {
+             
+             HoundDataHoundServer* houndServer = response;
+             NSString *transcription = [houndServer.disambiguation.choiceData.firstObject transcription];
+             
+             NSLog(@"Transcription: %@", transcription);
+         }
+     }];
+    
+    
+    
+    
+    
     [[Houndify instance] presentListeningViewControllerInViewController:self.tabBarController
                                                                fromView:sender
                                                                   style:nil
                                                             requestInfo:nil
                                                         responseHandler:
      
+     
+
      ^(NSError * _Nullable error, id  _Nullable response, NSDictionary<NSString *,id> * _Nullable dictionary, NSDictionary<NSString *,id> * _Nullable requestInfo) {
          if (error)
          {
@@ -102,14 +135,24 @@
          }
          else
          {
-             self.responseText = [JSONAttributedFormatter attributedStringFromObject:dictionary style:nil];
+             self.responseText = [JSONAttributedFormatter attributedStringFromObject:dictionary[@"Disambiguation"][@"ChoiceData"][0][@"Transcription"] style:nil];
+                          
+             Audio *audio = [[Audio alloc] init];
+             
+             
+             audio.textToString = self.responseText.string;
+             [self.audios addObject:audio];
+             
+             
              
              HoundDataCommandResult* commandResult = [response allResults].firstObject;
+            
              
-             // Any properties from the documentation can be accessed through the keyed accessors, e.g.:
+//              Any properties from the documentation can be accessed through the keyed accessors, e.g.:
              
              NSDictionary* nativeData = commandResult[@"NativeData"];
              
+
              NSLog(@"NativeData: %@", nativeData);
          }
          
