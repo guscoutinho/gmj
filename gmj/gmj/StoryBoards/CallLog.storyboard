@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="82" id="Lfw-1s-vqE">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="82" id="Lfw-1s-vqE" customClass="CallTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="375" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lfw-1s-vqE" id="k4S-j3-JFs">
@@ -55,6 +55,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="cCD-gq-bKA" id="jGR-tF-AgY"/>
+                                            <outlet property="tag1" destination="j4b-gJ-Xt8" id="QpE-rx-2Vy"/>
+                                            <outlet property="tag2" destination="6qs-qu-UDw" id="wnE-Ee-gmU"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -64,6 +69,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="1wW-WG-F0O"/>
                     <connections>
+                        <outlet property="CallTableView" destination="SgC-vn-6Vf" id="E08-e4-qyP"/>
                         <segue destination="7ae-iJ-1ZL" kind="show" id="0Ha-bc-0B2"/>
                     </connections>
                 </viewController>

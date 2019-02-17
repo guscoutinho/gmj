@@ -9,6 +9,7 @@
 #import "CallLogViewController.h"
 
 @interface CallLogViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *CallTableView;
 
 @end
 

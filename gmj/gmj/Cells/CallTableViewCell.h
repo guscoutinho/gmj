@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface CallTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *tag1;
+@property (weak, nonatomic) IBOutlet UILabel *tag2;
 
 @end
