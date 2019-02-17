@@ -13,9 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Audio : NSObject
 
 @property (nonatomic, strong) NSString *textToString;
-//@property (nonatomic, strong) NSDate *date;
-//@property (nonatomic, strong) NSString *name;
-
+@property (nonatomic, strong) NSString *date;
+@property (nonatomic, strong) NSMutableArray *tags;
 
 @end
 
