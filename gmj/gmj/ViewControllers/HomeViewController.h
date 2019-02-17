@@ -11,5 +11,7 @@
 @interface HomeViewController : ViewController
 
 @property (nonatomic, strong) NSMutableArray *audios;
+@property (strong, nonatomic) NSMutableArray *timelinePosts;
+
 
 @end

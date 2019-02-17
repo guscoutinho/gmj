@@ -23,6 +23,7 @@
 @property (nonatomic, copy) NSString *updateText;
 @property (nonatomic, copy) NSAttributedString *responseText;
 
+
 @end
 
 @implementation HomeViewController
@@ -31,6 +32,8 @@
     [super viewDidLoad];
     [super viewWillAppear:YES];
     [self.audios init];
+    self.timelinePosts = [[NSMutableArray alloc] init];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -141,7 +144,7 @@
              
              
              audio.textToString = self.responseText.string;
-             [self.audios addObject:audio];
+             [self.timelinePosts addObject:audio];
              
              
              
