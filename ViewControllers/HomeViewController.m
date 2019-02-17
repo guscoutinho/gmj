@@ -14,8 +14,6 @@
 @import HoundifySDK;
 
 @interface HomeViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *backButton;
-- (IBAction)didTapBackButton:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextView *responseTextView;
 @property (weak, nonatomic) IBOutlet UIButton *houndifyButton;
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
@@ -26,7 +24,6 @@
 @property (nonatomic, copy) NSAttributedString *responseText;
 @property (strong, nonatomic) IBOutlet UIView *greenBackground;
 
-@property (weak, nonatomic) IBOutlet UIView *messageView;
 
 @end
 
@@ -35,17 +32,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [super viewWillAppear:YES];
-    self.messageView.alpha = 0;
-    self.backButton.alpha = 0;
     self.timelinePosts = [[NSMutableArray alloc] init];
     
+    self.greenBackground = [[UIView alloc] initWithFrame:CGRectMake(10,20,100,100)];
     self.greenBackground.alpha = 0.5;
-    self.houndifyButton.alpha = 1;
-    
-    self.greenBackground.layer.cornerRadius = self.greenBackground.frame.size.width / 2;
-    self.greenBackground.layer.masksToBounds = YES;
-
-
+    self.greenBackground.layer.cornerRadius = 50;  // half the width/height
 
 }
 
@@ -106,9 +97,8 @@
     [self resetTextView];
     
     // Launch the houndify listening UI using presentListeningViewControllerInViewController:fromView:style:requestInfo:responseHandler:
-    [self startListeningForHotPhrase];
+    
     [[HoundVoiceSearch instance] startSearchWithRequestInfo:nil responseHandler:
-     
      
      ^(NSError* error, HoundVoiceSearchResponseType responseType, id response, NSDictionary* dictionary, NSDictionary* requestInfo) {
          
@@ -149,15 +139,37 @@
          }
          else
          {
+             NSAttributedString *bigString;
+             bigString = [JSONAttributedFormatter attributedStringFromObject:dictionary style:nil];
+             
+             NSAttributedString *date;
+             date = [JSONAttributedFormatter attributedStringFromObject:dictionary[@"BuildInfo"][@"Date"] style:nil];
+             
              self.responseText = [JSONAttributedFormatter attributedStringFromObject:dictionary[@"Disambiguation"][@"ChoiceData"][0][@"Transcription"] style:nil];
                           
              Audio *audio = [[Audio alloc] init];
              
+             // here we do that good for loop to loop through string ***************
+             NSArray *accidents = [NSArray arrayWithObjects:@"accident",@"crash", @"drown", "lightning",@"overdose",@"assault",@"fight",@"hurt",@"injure",@"attack",@"drunk driver", "weapon",@"gun", nil];
+             NSArray *medicalEmergency = [NSArray arrayWithObjects:@"stroke",@"heart attack", @"seizure", "diabetes",@"faint",@"pass out",@"passed out",@"unconscious",@"hypothermia",@"breathe",@"breath", @"dizzy",@"dizziness", @"blind", @"blood", @"bone", @"choke", @"choking", @"poison", @"venom", @"allergic reaction", nil];
+             NSArray *fire = [NSArray arrayWithObjects:@"fire",@"arson", @"burn", nil];
+             NSArray *crime = [NSArray arrayWithObjects:@"theft",@"arson", @"theif", "thieves",@"burglar",@"robber",@"fight", nil];
+             NSArray *potentialDanger = [NSArray arrayWithObjects:@"suspicious",@"nervous", @"scared", "uncomfortable",@"loiter",@"following me",@"stalk", nil];
+             NSArray *grandArray = [NSArray arrayWithObjects:accidents, medicalEmergency, fire, crime, potentialDanger, nil];
              
              audio.textToString = self.responseText.string;
+             audio.date = date.string;
+             NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+             for (int i = 0; i < [grandArray count]; i++) {
+                 for (int j =  0; j < [grandArray[i] count]; j++) {
+                     if ([self.responseText.string rangeOfString:grandArray[i][j]].location != NSNotFound) {
+                         [tempArray addObject:grandArray[i][j]];
+                     }
+                }
+             }
+             audio.tags = tempArray;
+             
              [self.timelinePosts addObject:audio];
-             
-             
              
              HoundDataCommandResult* commandResult = [response allResults].firstObject;
             
@@ -189,12 +201,6 @@
 {
     if (self.responseText.length > 0) {
         self.responseTextView.attributedText = self.responseText;
-        self.houndifyButton.alpha = 0;
-        self.greenBackground.alpha = 0;
-        self.backButton.alpha = 1;
-        self.responseTextView.textAlignment = NSTextAlignmentCenter;
-        [self.responseTextView setFont:[UIFont fontWithName:@"Arial" size:17]];
-
     } else if (self.updateText.length > 0) {
         self.responseTextView.text = self.updateText;
     } else {
@@ -258,9 +264,4 @@
 }
 
 
-- (IBAction)didTapBackButton:(id)sender {
-    self.greenBackground.alpha = 0.5;
-    self.houndifyButton.alpha = 1;
-    
-}
 @end

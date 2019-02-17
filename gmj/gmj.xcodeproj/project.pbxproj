@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0EDEEADA92F5DE5CCC0DDAF4 /* libPods-gmj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF0933542DD388686B07FBC /* libPods-gmj.a */; };
 		29AB0B0AAA8F83D4E0A49FAE /* libPods-gmjUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F85542B4619AAA60D52C776 /* libPods-gmjUITests.a */; };
+		65AEDB2F22193A5000E97E96 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AEDB2E22193A5000E97E96 /* MessageViewController.m */; };
 		65D780A4221878E30095F80A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D780A3221878E30095F80A /* AppDelegate.m */; };
 		65D780A7221878E30095F80A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D780A6221878E30095F80A /* ViewController.m */; };
 		65D780AC221878E50095F80A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65D780AB221878E50095F80A /* Assets.xcassets */; };
@@ -46,6 +47,8 @@
 		1B286175EA853E512985F569 /* Pods-gmjUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gmjUITests.debug.xcconfig"; path = "Target Support Files/Pods-gmjUITests/Pods-gmjUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3F85542B4619AAA60D52C776 /* libPods-gmjUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gmjUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		545F41AB73BF3D4BDFF4AD1F /* Pods-gmj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gmj.debug.xcconfig"; path = "Target Support Files/Pods-gmj/Pods-gmj.debug.xcconfig"; sourceTree = "<group>"; };
+		65AEDB2D22193A5000E97E96 /* MessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		65AEDB2E22193A5000E97E96 /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		65D7809F221878E30095F80A /* gmj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gmj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D780A2221878E30095F80A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		65D780A3221878E30095F80A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -182,6 +185,8 @@
 				65D780DD2218AC3A0095F80A /* CallLogViewController.m */,
 				65D780DF2218AC4C0095F80A /* ResourcesViewController.h */,
 				65D780E02218AC4C0095F80A /* ResourcesViewController.m */,
+				65AEDB2D22193A5000E97E96 /* MessageViewController.h */,
+				65AEDB2E22193A5000E97E96 /* MessageViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -407,6 +412,7 @@
 				65D780B2221878E50095F80A /* main.m in Sources */,
 				65D780DE2218AC3A0095F80A /* CallLogViewController.m in Sources */,
 				65F2CB8B2218E98600F0A5EC /* JSONAttributedFormatter.m in Sources */,
+				65AEDB2F22193A5000E97E96 /* MessageViewController.m in Sources */,
 				A3F8AF6B2218997E00B8FCAD /* User.m in Sources */,
 				65D780CF22187E610095F80A /* SignUpViewController.m in Sources */,
 				A3F8AF6E2218998B00B8FCAD /* Audio.m in Sources */,

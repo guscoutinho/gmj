@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4pA-Co-tr1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4pA-Co-tr1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OfQ-l4-doi">
-                                <rect key="frame" x="127" y="269" width="121" height="129"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OfQ-l4-doi">
+                                <rect key="frame" x="67" y="244" width="239" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZM-mz-KQc">
-                                        <rect key="frame" x="12" y="20" width="96" height="89"/>
+                                        <rect key="frame" x="101" y="30" width="37" height="56"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="mic"/>
+                                        <state key="normal" image="ic-blk-tabbar-houndify-mic.png"/>
                                         <connections>
                                             <action selector="activateVoiceSearch:" destination="4pA-Co-tr1" eventType="touchUpInside" id="qQT-2C-xI2"/>
                                         </connections>
@@ -34,26 +34,17 @@
                                 <color key="backgroundColor" red="0.28606835372615252" green="0.91282788212435229" blue="0.34232156512149609" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Press to Take Call" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q5b-bQ-AO3">
-                                <rect key="frame" x="62" y="191" width="250" height="70"/>
+                                <rect key="frame" x="97" y="197" width="180" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGs-Fj-omk">
-                                <rect key="frame" x="16" y="37" width="36" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="back"/>
-                                <connections>
-                                    <action selector="didTapBackButton:" destination="4pA-Co-tr1" eventType="touchUpInside" id="tgf-ZV-JDX"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cSL-4f-aH2"/>
                     </view>
                     <connections>
-                        <outlet property="backButton" destination="YGs-Fj-omk" id="SM6-kC-1wq"/>
                         <outlet property="greenBackground" destination="OfQ-l4-doi" id="JRs-KL-NM6"/>
                         <outlet property="houndifyButton" destination="hZM-mz-KQc" id="4OT-To-l8f"/>
                         <outlet property="responseTextView" destination="Q5b-bQ-AO3" id="NC4-Eo-BW8"/>
@@ -63,17 +54,8 @@
             </objects>
             <point key="canvasLocation" x="189.59999999999999" y="98.50074962518741"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="mAc-Zl-V7J">
-            <objects>
-                <viewController id="Pcm-4b-w4M" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ynM-14-0nz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1042" y="99"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="back" width="48" height="48"/>
-        <image name="mic" width="512" height="512"/>
+        <image name="ic-blk-tabbar-houndify-mic.png" width="37" height="56"/>
     </resources>
 </document>
