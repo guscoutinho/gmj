@@ -139,15 +139,21 @@
          }
          else
          {
+             NSAttributedString *bigString;
+             bigString = [JSONAttributedFormatter attributedStringFromObject:dictionary style:nil];
+             
+             NSAttributedString *date;
+             date = [JSONAttributedFormatter attributedStringFromObject:dictionary[@"BuildInfo"][@"Date"] style:nil];
+             
              self.responseText = [JSONAttributedFormatter attributedStringFromObject:dictionary[@"Disambiguation"][@"ChoiceData"][0][@"Transcription"] style:nil];
                           
              Audio *audio = [[Audio alloc] init];
              
+             // here we do that good for loop to loop through string ***************
              
              audio.textToString = self.responseText.string;
+             audio.date = date.string;
              [self.timelinePosts addObject:audio];
-             
-             
              
              HoundDataCommandResult* commandResult = [response allResults].firstObject;
             
