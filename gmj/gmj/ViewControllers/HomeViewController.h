@@ -10,4 +10,6 @@
 
 @interface HomeViewController : ViewController
 
+@property (nonatomic, strong) NSMutableArray *audios;
+
 @end

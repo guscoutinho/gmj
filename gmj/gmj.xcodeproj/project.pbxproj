@@ -85,6 +85,7 @@
 		A3F8AF6D2218998B00B8FCAD /* Audio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Audio.m; sourceTree = "<group>"; };
 		A3F8AF712218A68E00B8FCAD /* ic_iOS_all */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ic_iOS_all; sourceTree = "<group>"; };
 		A3F8AF7F2218E5FC00B8FCAD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3F8AF822219120A00B8FCAD /* ic-blk-toolbar-houndify-mic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-blk-toolbar-houndify-mic@2x.png"; sourceTree = "<group>"; };
 		CD6C1E6BA84C34054600BBF5 /* Pods-gmjUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gmjUITests.release.xcconfig"; path = "Target Support Files/Pods-gmjUITests/Pods-gmjUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +142,7 @@
 				65D780C6221879210095F80A /* StoryBoards */,
 				65D780C8221879420095F80A /* Views */,
 				65D780AB221878E50095F80A /* Assets.xcassets */,
+				A3F8AF822219120A00B8FCAD /* ic-blk-toolbar-houndify-mic@2x.png */,
 				65D780AD221878E50095F80A /* LaunchScreen.storyboard */,
 				65D780B0221878E50095F80A /* Info.plist */,
 				65D780B1221878E50095F80A /* main.m */,
