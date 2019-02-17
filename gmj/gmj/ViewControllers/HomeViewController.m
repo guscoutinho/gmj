@@ -166,16 +166,11 @@
     
     if ([HoundVoiceSearch instance].state == HoundVoiceSearchStateNone || [HoundVoiceSearch instance].state == HoundVoiceSearchStateReady)
     {
-        text = [@"Houndify.h offers the simplest API for offering voice search in your app. It provides a UI and manages audio for you. Tap the microphone to begin a voice search with presentListeningViewController(...)" mutableCopy];
+        text = [@"Listening..." mutableCopy];
     }
     else
     {
         return nil;
-    }
-    
-    if ([HoundVoiceSearch instance].state == HoundVoiceSearchStateNone || ![HoundVoiceSearch instance].enableHotPhraseDetection)
-    {
-        [text appendString:@"\n\nTo use a hot phrase with the Houndify UI, audio must first be explicitly activated. See startListeningForHotPhrase() in HoundifyViewController in this sample code. Tap \"Listen for Hot Phrase\""];
     }
     
     return text;
